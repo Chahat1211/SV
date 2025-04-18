@@ -1,0 +1,51 @@
+Start time: 13:19:58 on Feb 27,2025
+qverilog gotorep.sv 
+-- Compiling module asertion_ex
+
+Top level modules:
+	asertion_ex
+# vsim asertion_ex -c -do "run -all; quit -f" -appendlog -l qverilog.log -vopt 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.6b linux_x86_64 May 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.asertion_ex(fast)
+# run -all
+# [0] | clk = 0, a = 1, b = 1, c = 0
+# [5] | clk = 1, a = 1, b = 1, c = 0
+# [10] | clk = 0, a = 1, b = 1, c = 0
+# [14] | clk = 0, a = 0, b = 1, c = 0
+# [15] | clk = 1, a = 0, b = 1, c = 0
+# [20] | clk = 0, a = 0, b = 1, c = 0
+# [25] | clk = 1, a = 0, b = 1, c = 0
+# [30] | clk = 0, a = 0, b = 1, c = 0
+# [35] | clk = 1, a = 0, b = 1, c = 0
+# [40] | clk = 0, a = 0, b = 1, c = 0
+# ** Error: Assertion error.
+#    Time: 45 ns Started: 5 ns  Scope: asertion_ex.a_1 File: gotorep.sv Line: 25
+# [45] | clk = 1, a = 0, b = 1, c = 0
+# [50] | clk = 0, a = 0, b = 1, c = 0
+# [55] | clk = 1, a = 0, b = 1, c = 0
+# [60] | clk = 0, a = 0, b = 1, c = 0
+# [64] | clk = 0, a = 0, b = 1, c = 1
+# [65] | clk = 1, a = 0, b = 1, c = 1
+# [70] | clk = 0, a = 0, b = 1, c = 1
+# [74] | clk = 0, a = 0, b = 0, c = 1
+# [75] | clk = 1, a = 0, b = 0, c = 1
+# [80] | clk = 0, a = 0, b = 0, c = 1
+# ** Note: $finish    : gotorep.sv(17)
+#    Time: 84 ns  Iteration: 0  Instance: /asertion_ex
+# End time: 13:19:59 on Feb 27,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
